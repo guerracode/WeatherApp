@@ -1,0 +1,72 @@
+.data__container {
+  /* flex-grow: 1; */
+  width  : calc(100% - 459px);
+  height : auto;
+  padding: 0 5%;
+}
+
+.data__type-container {
+  display        : flex;
+  align-items    : center;
+  justify-content: flex-end;
+  width          : 100%;
+  height         : 100px;
+}
+
+.data__type-container button {
+  width           : 40px;
+  height          : 40px;
+  margin-left     : 20px;
+  border          : none;
+  border-radius   : 20px;
+  background-color: #585676;
+  color           : var(--light-grey);
+  font-size       : 1.8rem;
+  font-weight     : 600;
+  line-height     : 21.13px;
+  text-align      : center;
+}
+
+.data__days-container {
+  display        : flex;
+  flex-wrap      : wrap;
+  align-items    : center;
+  justify-content: center;
+  width          : 100%;
+  height         : auto;
+}
+
+.data__hightlights-container {
+  width : 100%;
+  height: auto;
+  color : white;
+}
+
+.data__hightlights-container .days__title {
+  margin     : 20px 10%;
+  font-size  : 2.4rem;
+  font-weight: 700px;
+  line-height: 2.8rem;
+  color      : var(--light-grey);
+}
+
+.data__hightlights-container .hightlights__card-container {
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: center;
+}
+
+.data__footer-container {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  width          : 100%;
+  height         : 50px;
+}
+
+.data__footer-container .footer__text {
+  font-size  : 1.4rem;
+  font-weight: 600;
+  line-height: 1.7rem;
+  color      : #616475;
+}

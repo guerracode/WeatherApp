@@ -1,0 +1,28 @@
+.hightlightsCard__container {
+  display         : flex;
+  flex-direction  : column;
+  align-items     : center;
+  justify-content : space-around;
+  width           : 328px;
+  min-height      : 160px;
+  max-height      : 204px;
+  margin          : 20px;
+  background-color: var(--light-blue);
+}
+
+.hightlightsCard__container .hightlightsCard__title {
+  font-size  : 1.6rem;
+  font-weight: 500;
+  line-height: 1.878rem;
+}
+
+.hightlightsCard__container .hightlightsCard__data {
+  font-size  : 6.4rem;
+  font-weight: 700;
+  line-height: 4.2rem;
+}
+
+.hightlightsCard__container .hightlightsCard__data span {
+  font-size  : 4rem;
+  font-weight: 500;
+}

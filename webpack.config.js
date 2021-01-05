@@ -28,11 +28,21 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
+          // {
+          //   loader: MiniCssExtractPlugin.loader,
+          // },
+          'style-loader',
           'css-loader',
         ],
+      },
+      {
+        test: /\.(jpg|png|svg)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            outputPath: 'assets/',
+          },
+        },
       },
     ],
   },
@@ -50,5 +60,6 @@ module.exports = {
     compress: true,
     historyApiFallback: true,
     port: 3005,
+    open: true,
   },
 };

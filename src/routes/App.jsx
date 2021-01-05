@@ -3,6 +3,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from '../containers/Home';
 import NotFound from '../containers/NotFound';
 
+import '../styles/App.css';
+
 const App = () => {
   return (
     <BrowserRouter>

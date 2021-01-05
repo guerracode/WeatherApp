@@ -1,0 +1,125 @@
+.sideBar-container {
+  /* flex-basis         : 459px; */
+  /* min-width       : 320px; */
+  width       : 459px;
+  height          : 100vh;
+  background-color: var(--light-blue);
+}
+
+.sideBar__search-container {
+  display        : flex;
+  align-items    : center;
+  justify-content: space-around;
+  width          : 100%;
+  height         : 15%;
+}
+
+.sideBar__search-container .sideBar__search-button {
+  width           : 161px;
+  height          : 40px;
+  background-color: #6E707A;
+  color           : var(--light-grey);
+  border-radius   : 4px;
+  border          : none;
+}
+
+.sideBar__search-container .sideBar__location-button {
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+  width           : 40px;
+  height          : 40px;
+  background-color: #6E707A;
+  color           : var(--light-grey);
+  border-radius   : 20px;
+  border          : none;
+}
+
+.sideBar__search-container .sideBar__location-button img {
+  width : 60%;
+  height: 60%;
+}
+
+.sideBar__weather-container {
+  width : 100%;
+  height: 85%;
+}
+
+.weather__image {
+  position       : relative;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  width          : 100%;
+  height         : 40%;
+}
+
+.weather__image:after {
+  content            : '';
+  background         : url('../../assets/images/Cloud-background.png');
+  background-size    : cover;
+  background-position: center;
+  background-repeat  : no-repeat;
+  position           : absolute;
+  top                : 0px;
+  left               : 0px;
+  width              : 100%;
+  height             : 100%;
+  opacity            : 0.1;
+}
+
+.weather__image img {
+  width : 202px;
+  height: 234px;
+}
+
+.weather__stats {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  justify-content: space-around;
+  width          : 100%;
+  height         : 60%;
+}
+
+.weather__number {
+  font-size  : 14.4rem;
+  font-weight: 500;
+  line-height: 16.9rem;
+  color      : var(--light-grey);
+}
+
+.weather__number span {
+  font-size: 5rem;
+  color    : var(--mid-grey);
+}
+
+.weather__text {
+  font-size  : 3.6rem;
+  font-weight: 600;
+  line-height: 4.2rem;
+  color      : var(--mid-grey);
+}
+
+.weather__date {
+  font-size  : 1.8rem;
+  font-weight: 500;
+  line-height: 2.1rem;
+  color      : var(--dark-grey);
+}
+
+.weather__location {
+  font-size  : 1.8rem;
+  font-weight: 600;
+  line-height: 2.1rem;
+  color      : var(--dark-grey);
+}
+
+.weather__location span {
+  display         : inline-block;
+  width           : 18px;
+  height          : 18px;
+  margin-right    : 10px;
+  background-image: url("../../assets/images/alfiler.png");
+  background-size : cover;
+}
