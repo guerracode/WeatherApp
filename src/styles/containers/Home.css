@@ -1,8 +1,12 @@
 .main-container {
-  display            : flex;
-  /* flex-wrap       : wrap; */
-  /* flex-direction  : column; */
-  width              : 100vw;
-  height             : auto;
-  background-color   : var(--dark-blue);
+  display         : flex;
+  width           : 100vw;
+  height          : auto;
+  background-color: var(--dark-blue);
+}
+
+@media screen and (max-width: 1342px) {
+  .main-container {
+    flex-direction: column;
+  }
 }

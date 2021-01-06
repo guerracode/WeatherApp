@@ -28,10 +28,10 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          // {
-          //   loader: MiniCssExtractPlugin.loader,
-          // },
-          'style-loader',
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          // 'style-loader',
           'css-loader',
         ],
       },

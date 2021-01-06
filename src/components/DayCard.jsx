@@ -4,13 +4,13 @@ import '../styles/components/DayCard.css';
 
 import WeatherIcon from '../assets/images/Sleet.png';
 
-const DayCard = () => (
+const DayCard = ({ date, icon, start, end }) => (
   <article className="dayCard-container">
-    <p className="dayCard__title">Tomorrow</p>
-    <img src={WeatherIcon} alt="weather icon" />
+    <p className="dayCard__title">{date}</p>
+    <img src={icon} alt="weather icon" />
     <div className="dayCard__degrees">
-      <p className="degrees__left">16°C</p>
-      <p className="degrees__right">11°C</p>
+      <p className="degrees__left">{`${start}°C`}</p>
+      <p className="degrees__right">{`${end}°C`}</p>
     </div>
   </article>
 );

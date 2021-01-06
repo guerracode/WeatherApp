@@ -1,5 +1,4 @@
 .data__container {
-  /* flex-grow: 1; */
   width  : calc(100% - 459px);
   height : auto;
   padding: 0 5%;
@@ -69,4 +68,10 @@
   font-weight: 600;
   line-height: 1.7rem;
   color      : #616475;
+}
+
+@media screen and (max-width: 1342px) {
+  .data__container {
+    width: 100%;
+  }
 }
