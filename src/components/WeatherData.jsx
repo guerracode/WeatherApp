@@ -19,9 +19,9 @@ const WeatherData = () => {
         <button className="type__celsius-button" type="button">
           °C
         </button>
-        <button className="type__fahrenheit-button" type="button">
+        {/* <button className="type__fahrenheit-button" type="button">
           °F
-        </button>
+        </button> */}
       </div>
       <div className="data__days-container">
         {weatherData.slice(1, 6).map((data) => (
