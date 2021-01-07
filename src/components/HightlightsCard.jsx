@@ -2,12 +2,12 @@ import React from 'react';
 
 import '../styles/components/HightlightsCard.css';
 
-const HightlightsCard = () => (
+const HightlightsCard = ({ title, number, type }) => (
   <article className="hightlightsCard__container">
-    <h4 className="hightlightsCard__title">Wind status</h4>
+    <h4 className="hightlightsCard__title">{title}</h4>
     <h2 className="hightlightsCard__data">
-      7
-      <span>mph</span>
+      {Math.trunc(number)}
+      <span>{type}</span>
     </h2>
   </article>
 );

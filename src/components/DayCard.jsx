@@ -2,8 +2,6 @@ import React from 'react';
 
 import '../styles/components/DayCard.css';
 
-import WeatherIcon from '../assets/images/Sleet.png';
-
 const DayCard = ({ date, icon, start, end }) => (
   <article className="dayCard-container">
     <p className="dayCard__title">{date}</p>

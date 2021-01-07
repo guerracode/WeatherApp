@@ -2,7 +2,7 @@
   display         : flex;
   flex-direction  : column;
   align-items     : center;
-  justify-content : center; 
+  justify-content : center;
   width           : 459px;
   height          : 100vh;
   background-color: var(--light-blue);
@@ -19,6 +19,7 @@
 .sideBar__search-container .sideBar__search-button {
   width           : 161px;
   height          : 40px;
+  z-index         : 10;
   background-color: #6E707A;
   color           : var(--light-grey);
   border-radius   : 4px;
@@ -31,6 +32,7 @@
   justify-content : center;
   width           : 40px;
   height          : 40px;
+  z-index         : 10;
   background-color: #6E707A;
   color           : var(--light-grey);
   border-radius   : 20px;
